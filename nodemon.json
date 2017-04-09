@@ -1,0 +1,11 @@
+{
+    "restartable": "rs",
+    "ignore": [
+        "*.test.js"
+    ],
+    "verbose": true,
+    "execMap": {
+        "js": "node --harmony"
+    },
+    "ext": "js json"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "dockas_api_rest",
+  "version": "0.0.0",
+  "description": "REST Api service for the Dockas project.",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:dockas/dockas_api_rest.git",
+    "type": "git"
+  },
+  "author": "Bruno Fonseca <brunomacf@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "eslint": "^3.15.0"
+  },
+  "dependencies": {
+    "bcryptjs": "==2.3.0",
+    "body-parser": "==1.15.2",
+    "cookie-parser": "==1.4.3",
+    "express": "==4.14.0",
+    "js-yaml": "==3.7.0",
+    "jsonwebtoken": "==7.1.9",
+    "kafka-node": "==1.0.4",
+    "lodash": "==4.16.4",
+    "method-override": "==2.3.6",
+    "mkdirp": "==0.5.1",
+    "moment": "==2.15.1",
+    "mongodb": "==2.2.16",
+    "redis": "==2.6.2",
+    "thrift": "==0.9.3",
+    "winston": "==2.2.0",
+    "winston-logstash": "==0.2.11"
+  }
+}

@@ -1,0 +1,12 @@
+# Ignore MAC OS X files
+.DS_Store
+
+# Ignore npm, thrift and dist folders
+node_modules
+gen-*
+
+# Ignore local config files
+config/local*
+
+# Yarn
+yarn.lock

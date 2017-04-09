@@ -1,0 +1,26 @@
+port: 9898
+
+secrets:
+    cookie: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
+
+db:
+    mongo:
+        url: mongodb://localhost:27017/Dockas
+        testUrl: mongodb://localhost:27017/DockasTest
+    redis:
+        url: redis://localhost:6379
+        secret: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
+        no_ready_check: true
+
+auth:
+    token:
+        expiration: 604800
+
+rootUser:
+    fullName: Dockas Root
+    email: root@dockas.com
+    password: Mula*8
+
+activation:
+    ticket:
+        expiration: 216000

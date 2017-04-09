@@ -1,0 +1,9 @@
+[submodule "common-logger"]
+	path = common-logger
+	url = git@github.com:nosebit/common-logger.git
+[submodule "common-config"]
+	path = common-config
+	url = git@github.com:nosebit/common-config.git
+[submodule "common-utils"]
+	path = common-utils
+	url = git@github.com:nosebit/common-utils.git
