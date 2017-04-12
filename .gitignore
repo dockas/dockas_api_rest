@@ -10,3 +10,7 @@ config/local*
 
 # Yarn
 yarn.lock
+
+# Ignore files and tmp folder
+files
+tmp

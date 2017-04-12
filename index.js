@@ -1,3 +1,5 @@
+global.__rootdir = __dirname;
+
 let LoggerFactory   = require("common-logger"),
     config          = require("common-config");
 

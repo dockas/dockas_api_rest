@@ -3,6 +3,10 @@ port: 9898
 secrets:
     cookie: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
 
+files:
+    dir: files
+    tmpDir: tmp
+
 db:
     mongo:
         url: mongodb://localhost:27017/Dockas
@@ -19,7 +23,9 @@ auth:
 rootUser:
     fullName: Dockas Root
     email: root@dockas.com
+    role: admin
     password: Mula*8
+    deletedAt: null
 
 activation:
     ticket:
