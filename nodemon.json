@@ -1,7 +1,10 @@
 {
     "restartable": "rs",
     "ignore": [
-        "*.test.js"
+        "*.test.js",
+        "logs/*",
+        "tmp/*",
+        "files/*"
     ],
     "verbose": true,
     "execMap": {
