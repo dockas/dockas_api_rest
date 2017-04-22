@@ -1,11 +1,18 @@
+/* global __dirname */
+
 global.__rootdir = __dirname;
 
 let LoggerFactory   = require("common-logger"),
-    config          = require("common-config");
+    config          = require("common-config"),
+    mkdirp          = require("mkdirp");
+
+// Create logs dir
+mkdirp("logs");
 
 // Bootstrap logger factory.
 LoggerFactory.service_name = require("./package.json").name;
 LoggerFactory.logstashWinstonHost = process.env.LOGSTASH_WINSTON_HOST;
+LoggerFactory.useFileLogger = true;
 
 // Bootstrap server.
 let Server = require("./lib/server");
