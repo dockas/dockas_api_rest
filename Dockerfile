@@ -7,13 +7,13 @@ RUN build_pkgs="gcc g++ python git autoconf automake boost libtool flex bison" &
     apk --update add ${build_pkgs} ${run_pkgs}
 
 # Install thrift
-RUN cd /tmp && \
-    git clone -b THRIFT-4010 https://github.com/nosebit/thrift.git && \
-    cd thrift && \
-    ./bootstrap.sh && \
-    ./configure --with-lua=no && \
-    make && \
-    make install
+#RUN cd /tmp && \
+#    git clone -b THRIFT-4010 https://github.com/nosebit/thrift.git && \
+#    cd thrift && \
+#    ./bootstrap.sh && \
+#    ./configure --with-lua=no && \
+#    make && \
+#    make install
 
 # Set working directory
 WORKDIR /home

@@ -9,10 +9,10 @@ files:
 
 db:
     mongo:
-        url: mongodb://localhost:27017/Dockas
-        testUrl: mongodb://localhost:27017/DockasTest
+        url: mongodb://mongo.service.consul:27017/Dockas
+        testUrl: mongodb://mongo.service.consul:27017/DockasTest
     redis:
-        url: redis://localhost:6379
+        url: redis://redis.service.consul:6379
         secret: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
         no_ready_check: true
 
