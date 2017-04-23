@@ -8,3 +8,5 @@ ENH : Remove thrift installation from Dockerfile.
 ENH : User consul to discover mongo and redis hosts.
 ENH : Add stage rule to Makefile.
 BUG : Workaround a Joi bug where default addresses and roles array are not created on user creation.
+BUG : Add try-catch block around createImageThumbs function in core/file/upload module to prevent unhandled errors from thumbs creation.
+ENH : Ignore logs folder.
