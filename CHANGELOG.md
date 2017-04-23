@@ -10,3 +10,5 @@ ENH : Add stage rule to Makefile.
 BUG : Workaround a Joi bug where default addresses and roles array are not created on user creation.
 BUG : Add try-catch block around createImageThumbs function in core/file/upload module to prevent unhandled errors from thumbs creation.
 ENH : Ignore logs folder.
+BUG : Correct a bug with clean method in file upload module that prevents product creation.
+BUG : Add missing graphicsmagic to container.

@@ -3,7 +3,7 @@ MAINTAINER Nosebit Dev Team <dev@nosebit.com>
 
 # Install dev dependencies
 RUN build_pkgs="gcc g++ python git autoconf automake boost libtool flex bison" && \
-    run_pkgs="make bash" && \
+    run_pkgs="graphicsmagick make bash" && \
     apk --update add ${build_pkgs} ${run_pkgs}
 
 # Install thrift
