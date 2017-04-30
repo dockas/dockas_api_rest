@@ -21,3 +21,4 @@ ENH : Return the whole file created data in upload method (not just the id).
 ENH : Add findByEmail method to user service.
 ENH : Add email service with send invitation method.
 ENH : Create a kafka mock service through event emitter.
+FEA : Add stage.yml config file for stage environment.
