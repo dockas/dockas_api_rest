@@ -12,3 +12,12 @@ BUG : Add try-catch block around createImageThumbs function in core/file/upload 
 ENH : Ignore logs folder.
 BUG : Correct a bug with clean method in file upload module that prevents product creation.
 BUG : Add missing graphicsmagic to container.
+FEA : Add owner to product core service.
+ENH : Return all data for a created file instead of just it's id in file core service.
+FEA : Add a lot of new fields to product model.
+FEA : Add findByNameId method to product controller.
+ENH : Validate invitation within signup method in user controller.
+ENH : Return the whole file created data in upload method (not just the id).
+ENH : Add findByEmail method to user service.
+ENH : Add email service with send invitation method.
+ENH : Create a kafka mock service through event emitter.

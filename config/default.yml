@@ -7,6 +7,23 @@ files:
     dir: files
     tmpDir: tmp
 
+qrcodes:
+    dir: files/qrcodes
+
+sendgrid:
+    key: ""
+
+email:
+    templatesPath: emails
+    logoUrl: https://dockas.com/assets/images/logo_400x88.png
+
+    invitation:
+        templateFileName: invitation.pug
+        fromname: Dockas
+        from: invitations-noreply@dockas.com
+        subject: Seu convite Dockas chegou!
+        signupUrl: https://dockas.com/signup
+
 db:
     mongo:
         url: mongodb://mongo.service.consul:27017/Dockas
