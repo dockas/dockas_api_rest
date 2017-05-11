@@ -23,3 +23,4 @@ ENH : Add email service with send invitation method.
 ENH : Create a kafka mock service through event emitter.
 FEA : Add stage.yml config file for stage environment.
 FEA : Add alert, brand, coupon, list and socket services.
+ENH : Enable to populate brand in product data.
