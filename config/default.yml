@@ -48,3 +48,17 @@ rootUser:
 activation:
     ticket:
         expiration: 216000
+
+currency:
+    symbol: "R$"
+    code: "BRL"
+
+alerts:
+    orderStatusUpdated:
+        open__awaiting_user_availability:
+            onOptionSelectedAction: alertOptionActionOrderUserAvailabilityUpdate
+            options:
+                - label: _YES_
+                  value: yes
+                - label: _NO_
+                  value: no

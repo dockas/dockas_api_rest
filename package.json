@@ -36,6 +36,7 @@
     "qrcode": "^0.8.1",
     "redis": "==2.6.2",
     "sendgrid": "^5.0.1",
+    "socket.io": "^1.7.3",
     "thrift": "==0.9.3",
     "winston": "==2.2.0",
     "winston-logstash": "==0.2.11"
