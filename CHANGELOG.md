@@ -25,3 +25,12 @@ FEA : Add stage.yml config file for stage environment.
 FEA : Add alert, brand, coupon, list and socket services.
 ENH : Enable to populate brand in product data.
 ENH : Remove owner from product find model and query perser.
+FEA : Add createFromCsv method to brand, tag and product api controllers.
+ENH : Generate product nameId when not provided.
+ENH : Enable to find brands by multiple nameIds.
+ENH : Add __version data to all service data models.
+ENH : Remove requirement of mainImage and images from product model.
+ENH : Add brand as required to product model.
+ENH : Add nameId to tag data model.
+ENH : Generate tag nameId when not provided.
+ENH : Enable to find tags by multiple nameIds.
