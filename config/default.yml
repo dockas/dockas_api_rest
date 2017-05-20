@@ -13,6 +13,8 @@ qrcodes:
 sendgrid:
     key: ""
 
+minOrderTotalPrice: 100.00
+
 email:
     templatesPath: emails
     logoUrl: https://dockas.com/assets/images/logo_400x88.png
@@ -62,3 +64,7 @@ alerts:
                   value: yes
                 - label: _NO_
                   value: no
+
+# Shared config keys
+shared:
+    - minOrderTotalPrice

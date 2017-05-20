@@ -40,3 +40,6 @@ ENH : Add company field to brands.
 ENH : Allow to populate brand and brand.company in product controller find method.
 ENH : Allow to populate company in brand controller find method.
 ENH : Allow to passing nameValue as argument in Generate.name function (use case: product parsing of nameId).
+FEA : Add endpoint to get shared config.
+ENH : Allow phone in user address.
+ENH : Create phones list in user profile.
