@@ -34,3 +34,8 @@ ENH : Add brand as required to product model.
 ENH : Add nameId to tag data model.
 ENH : Generate tag nameId when not provided.
 ENH : Enable to find tags by multiple nameIds.
+ENH : Replace lower/upper keys in find model range fields by gt/lt/gte/lte (more mongo alike).
+FEA : Create company service.
+ENH : Add company field to brands.
+ENH : Enable to populate brand and brand.company in product controller find method.
+ENH : Enable to populate company in brand controller find method.
