@@ -8,6 +8,9 @@ prod:
 dev:
 	NODE_PATH=${NODE_PATH} NODE_ENV=development nodemon --config ./nodemon.json --legacy-watch index.js
 
+stage:
+	NODE_PATH=${NODE_PATH} NODE_ENV=stage node --harmony index.js
+
 gulp:
 	NODE_PATH=${NODE_PATH} NODE_ENV=development gulp
 

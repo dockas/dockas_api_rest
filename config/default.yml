@@ -7,12 +7,29 @@ files:
     dir: files
     tmpDir: tmp
 
+qrcodes:
+    dir: files/qrcodes
+
+sendgrid:
+    key: ""
+
+email:
+    templatesPath: emails
+    logoUrl: https://dockas.com/assets/images/logo_400x88.png
+
+    invitation:
+        templateFileName: invitation.pug
+        fromname: Dockas
+        from: invitations-noreply@dockas.com
+        subject: Seu convite Dockas chegou!
+        signupUrl: https://dockas.com/signup
+
 db:
     mongo:
-        url: mongodb://localhost:27017/Dockas
-        testUrl: mongodb://localhost:27017/DockasTest
+        url: mongodb://mongo.service.consul:27017/Dockas
+        testUrl: mongodb://mongo.service.consul:27017/DockasTest
     redis:
-        url: redis://localhost:6379
+        url: redis://redis.service.consul:6379
         secret: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
         no_ready_check: true
 
@@ -31,3 +48,17 @@ rootUser:
 activation:
     ticket:
         expiration: 216000
+
+currency:
+    symbol: "R$"
+    code: "BRL"
+
+alerts:
+    orderStatusUpdated:
+        open__awaiting_user_availability:
+            onOptionSelectedAction: alertOptionActionOrderUserAvailabilityUpdate
+            options:
+                - label: _YES_
+                  value: yes
+                - label: _NO_
+                  value: no

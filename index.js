@@ -17,3 +17,12 @@ LoggerFactory.useFileLogger = true;
 // Bootstrap server.
 let Server = require("./lib/server");
 (new Server()).listen(process.env.PORT||config.port);
+
+
+/*let qrcode = require("qrcode");
+
+qrcode.toFile("./files/qrcodes/test.png", "teste", {
+    scale: 10
+}, (error) => {
+    console.error("qrcode error", error);
+});*/

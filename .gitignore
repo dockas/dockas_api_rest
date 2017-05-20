@@ -14,3 +14,4 @@ yarn.lock
 # Ignore files and tmp folder
 files
 tmp
+logs
