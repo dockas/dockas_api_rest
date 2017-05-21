@@ -43,3 +43,6 @@ ENH : Allow to passing nameValue as argument in Generate.name function (use case
 FEA : Add endpoint to get shared config.
 ENH : Allow phone in user address.
 ENH : Create phones list in user profile.
+ENH : Change minimum order total price to 70.00.
+ENH : Count success/error items in createFromCSV methods (brand,company,tag,product).
+FEA : Add priceGroups to product model.
