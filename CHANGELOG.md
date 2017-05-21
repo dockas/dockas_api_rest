@@ -46,3 +46,4 @@ ENH : Create phones list in user profile.
 ENH : Change minimum order total price to 70.00.
 ENH : Count success/error items in createFromCSV methods (brand,company,tag,product).
 FEA : Add priceGroups to product model.
+BUG : Correct a bug with misspeling of "phones" in user create method.
