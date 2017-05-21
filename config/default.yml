@@ -13,7 +13,7 @@ qrcodes:
 sendgrid:
     key: ""
 
-minOrderTotalPrice: 100.00
+minOrderTotalPrice: 70.00
 
 email:
     templatesPath: emails
