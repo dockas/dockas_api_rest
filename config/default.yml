@@ -13,7 +13,7 @@ qrcodes:
 sendgrid:
     key: ""
 
-minOrderTotalPrice: 70.00
+minOrderTotalPrice: 7000
 
 email:
     templatesPath: emails
@@ -34,6 +34,12 @@ db:
         url: redis://redis.service.consul:6379
         secret: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
         no_ready_check: true
+    arango:
+        url: tcp://root:@arango.service.consul:8529
+        database: Dockas
+
+crypt:
+    key: ""
 
 auth:
     token:
@@ -59,6 +65,16 @@ alerts:
     orderStatusUpdated:
         open__awaiting_user_availability:
             onOptionSelectedAction: alertOptionActionOrderUserAvailabilityUpdate
+            options:
+                - label: _YES_
+                  value: yes
+                - label: _NO_
+                  value: no
+
+notifications:
+    orderStatusUpdated:
+        open__awaiting_user_availability:
+            onOptionSelectedAction: notificationOptionActionOrderUserAvailabilityUpdate
             options:
                 - label: _YES_
                   value: yes

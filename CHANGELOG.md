@@ -48,3 +48,11 @@ ENH : Count success/error items in createFromCSV methods (brand,company,tag,prod
 FEA : Add priceGroups to product model.
 BUG : Correct a bug with misspeling of "phones" in user create method.
 ENH : Allow to specify a regex expression in product name "object" find query data.
+FEA : Implements the billing service for transparent checkout.
+FEA : Implements a Moip adaptor for billing service.
+ENH : Replace alert service by notification service.
+ENH : Replace mongodb by arangodb in tag service to deal with graph relationship among tags.
+ENH : Create an order in billing service as soon as the order is created by order service.
+ENH : Convert all float prices (product,order) to int (cents unity).
+ENH : Create a customer profile of user in billing service as soon user is created.
+ENH : Replace count by quantity in order and list data models.
