@@ -56,3 +56,4 @@ ENH : Create an order in billing service as soon as the order is created by orde
 ENH : Convert all float prices (product,order) to int (cents unity).
 ENH : Create a customer profile of user in billing service as soon user is created.
 ENH : Replace count by quantity in order and list data models.
+ENH : Reimplement createFromCSV route handler using new createCategoryEdge core service method.
