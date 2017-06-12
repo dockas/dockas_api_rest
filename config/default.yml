@@ -43,6 +43,10 @@ db:
         url: tcp://root:@arango.service.consul:8529
         database: Dockas
 
+billing:
+    notifications:
+      port: 9595
+
 crypt:
     key: ""
 
