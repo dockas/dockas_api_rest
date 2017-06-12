@@ -1,5 +1,5 @@
 email:
-    logoUrl: https://stage.dockas.com/assets/images/logo_400x88.png
-
-    invitation:
-        signupUrl: https://stage.dockas.com/signup
+  urls:
+    logo: https://stage.dockas.com/assets/images/logo_400x88.png
+    signup: https://stage.dockas.com/signup
+    images: https://file.stage.dockas.com/images

@@ -57,3 +57,31 @@ ENH : Convert all float prices (product,order) to int (cents unity).
 ENH : Create a customer profile of user in billing service as soon user is created.
 ENH : Replace count by quantity in order and list data models.
 ENH : Reimplement createFromCSV route handler using new createCategoryEdge core service method.
+ENH : Validate maxBrandCount and maxProductCount in brand and product create methods.
+ENH : Prevent user other than admin to create a brand with status other than NOT_APPROVED.
+ENH : Allow any user to create not approved brand an products.
+FEA : Add find and findById methods to file service.
+FEA : Send email to admins on invitation create.
+FEA : Handle in order controller the order.payment_succeeded event comming from billing service adaptor.
+ENH : Prevent user other than admin to create a product with status other than NOT_APPROVED.
+FEA : Add generateCategory method to product utils module.
+FEA : Add arango as database for tag service.
+FEA : Add incFindCount method to tag api controller to increment tag find count.
+FEA : Send email to admins on user signup.
+FEA : Process billing notification in moip adaptor.
+ENH : Remove hard coded birhdate in moip source module.
+ENH : Set birthdate as required to billing source. 
+ENH : Emit event on brand create and return brand created data to the caller.
+ENH : Parse query owners field in find parse module of brand service.
+FEA : Notify all users of brand created event through socket.
+ENH : New email service architecture (with localized templates and i18n string files).
+ENH : Add public and private status to list service create module model.
+ENH : Change notification status to integer (which now allows sorting with new notifications comming first).
+ENH : Return all order data created instead of just id.
+ENH : Change order status names to *payment_pending*, *payment_authorized*, *packaged*, *delivering*, *delivered*.
+FEA : Add findByBillingOrderId method to order service.
+ENH : Add Intl npm module to polyfill node localizaton.
+ENH : Return all price data created instead of just id.
+ENH : Add category and stock to product create model.
+ENH : Notify all users about product update.
+FEA : Add nameWithArango to Generate util module.

@@ -1,0 +1,50 @@
+doctype html
+
+html
+    header
+        meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+        
+        link(href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet")
+
+        style.
+            @media (min-width: 701px) {
+                .footer-mobile {
+                    display: none !important;
+                }
+                
+                .footer-desktop {
+                    display: block !important;
+                }
+            }
+            @media (max-width: 700px) {
+                body {
+                    padding: 10px !important;
+                }
+                
+                #complete-btn {
+                    font-size: 1em !important;
+                    padding: 20px 30px !important;
+                }
+                
+                .footer-mobile {
+                    display: block !important;
+                }
+                
+                .footer-desktop {
+                    display: none !important;
+                }
+            }
+    body(style="font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif; font-weight: 300; line-height: 1.7; font-size: 18px; text-align: justify; background: #f9f9f9; margin: 0; padding: 20px; color: #555;")
+        div(style="background: #fff; border: 1px solid #e5e5e5;")
+            div(style="padding: 50px 40px 70px 40px;")
+                div(style="text-align: center; font-size: 42px")
+                    img(src=logoUrl, style="max-width: 500px;")
+                div(style="margin-top: 40px")
+                    div(style="text-align: center")
+                        | Agora você pode desfrutar de todos os benefícios do Dockas, seu supermercado 100% online. Clique no botão abaixo para criar sua conta:
+                div(style="margin-top: 60px; text-align: center;")
+                    a(href=signupUrl, style="display: inline-block; padding: 20px 50px; max-width: 300px; color: white; background-color: #F9690E; border: 1px solid #C63600; border-bottom-width: 5px; border-right-width: 5px; border-radius: 5px; font-size: 1.3em; text-decoration: none;") Criar Minha Conta
+                div(style="margin-top: 40px; font-size: 12px; text-align: center;")
+                    | Em caso de dúvidas, sugestões ou críticas entre em contato conosco a qualquer momento pelo email 
+                    a(href="mailto:contato@dockas.com") contato@dockas.com
+                    | .

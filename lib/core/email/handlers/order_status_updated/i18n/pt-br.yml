@@ -1,0 +1,4 @@
+email_subject_packaged: "Pedido #{{count}} embalado"
+email_subject_delivering: "Pedido #{{count}} a caminho"
+email_subject_delivered: "Pedido #{{count}} entregue"
+

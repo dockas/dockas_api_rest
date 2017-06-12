@@ -15,16 +15,21 @@ sendgrid:
 
 minOrderTotalPrice: 7000
 
-email:
-    templatesPath: emails
-    logoUrl: https://dockas.com/assets/images/logo_400x88.png
+hostnames:
+    webapp: dockas.com
+    api: api.dockas.com
+    socket: socket.dockas.com
+    file: file.dockas.com
 
-    invitation:
-        templateFileName: invitation.pug
-        fromname: Dockas
-        from: invitations-noreply@dockas.com
-        subject: Seu convite Dockas chegou!
-        signupUrl: https://dockas.com/signup
+email:
+    lang: pt-br
+    fromname: Dockas
+    from: noreply@dockas.com
+
+    urls:
+        logo: https://dockas.com/assets/images/logo_400x88.png
+        signup: https://dockas.com/signup
+        images: https://file.dockas.com/images
 
 db:
     mongo:
@@ -49,9 +54,17 @@ rootUser:
     fullName: Dockas Root
     email: root@dockas.com
     password: Mula*8
+    maxBrandCount: 1
+    brandCount: 0
     deletedAt: null
     roles:
         - admin
+
+user:
+    maxBrandCount: 1
+
+brand:
+    maxProductCount: 5
 
 activation:
     ticket:
@@ -73,7 +86,7 @@ alerts:
 
 notifications:
     orderStatusUpdated:
-        open__awaiting_user_availability:
+        ready__awaiting_user_availability:
             onOptionSelectedAction: notificationOptionActionOrderUserAvailabilityUpdate
             options:
                 - label: _YES_

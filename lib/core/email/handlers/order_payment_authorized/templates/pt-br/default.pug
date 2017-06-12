@@ -1,0 +1,58 @@
+doctype html
+
+html
+    header
+        include ../header.pug
+        
+        style.
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                vertical-align: middle;
+                margin-top: 20px;
+                font-size: 16px;
+            }
+
+            table th {
+                border-bottom: 1px solid #ddd;
+                white-space: nowrap;
+            }
+
+            table th.name {
+                max-width: 300px;
+            }
+
+            table th,
+            table td {
+                padding: 10px;
+            }
+
+            table img {
+                width: 20px;
+                height: 20px;
+            }
+
+
+    body
+        div.logo-container
+            img(src=logoUrl)
+
+        div.container
+            div.content
+                div.title Pedido ##{order.count}
+                
+                div.body O pagamento do seu pedido foi realizado com sucesso e a entrega está agendada para domingo. Segue o cupom fiscal da sua compra: 
+
+                table
+                    tr
+                        th
+                        th Item
+                        th Qtd
+                        th Preço Total (R$)
+                    each item in order.items
+                        tr
+                            td
+                                img(src=item.product.mainProfileImage)
+                            td #{item.product.name}
+                            td #{item.quantity}
+                            td #{item.totalPrice}

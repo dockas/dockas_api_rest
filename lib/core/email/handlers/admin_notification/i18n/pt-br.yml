@@ -1,0 +1,6 @@
+email_subject_new_invitation: Nova requisição de convite
+email_subject_new_brand: Nova marca
+email_subject_new_user: Novo usuário
+email_subject_new_product: Novo produto
+email_subject_new_order: Novo pedido
+email_subject_order_payment_authorized: "Autorizado pagamento do pedido #{{count}}"

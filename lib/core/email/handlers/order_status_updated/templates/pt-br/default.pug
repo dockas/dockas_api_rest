@@ -1,0 +1,20 @@
+doctype html
+
+html
+    header
+        include ../header.pug
+        
+        style.
+            .code {
+                font-family: "Courier New", Courier, monospace;
+                font-size: 14px;
+            }
+
+    body
+        div.logo-container
+            img(src=logoUrl)
+
+        div.container
+            div.content
+                div.body
+                    div.code !{data}

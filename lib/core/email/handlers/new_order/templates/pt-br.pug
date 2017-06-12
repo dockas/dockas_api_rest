@@ -1,0 +1,31 @@
+doctype html
+
+html
+    include ../../../includes/header.pug
+
+    body
+        div.logo-container
+            img(src=logoUrl)
+
+        div.container
+            div.content
+                div.title Novo pedido
+
+                div.body
+                    div
+                        | Um pedido no valor de 
+                        b #{currencySymbol}#{totalPrice} 
+                        | foi realizado em #{createdAt} pelo usuário 
+                        b #{user.fullName}
+                        | para o endereço #{address.street}, #{address.number} - #{address.neighborhood}.
+
+                        if address.phone
+                            div
+                                | Telefone de contato do usuário: #{address.phone}.
+
+                        div
+                            | Segue a lista de produtos do pedido:
+
+                            ul
+                                each item in #{items}
+                                    li #{item.quantity} #{item.product.name}
