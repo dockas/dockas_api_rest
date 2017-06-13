@@ -87,3 +87,4 @@ ENH : Notify all users about product update.
 FEA : Add nameWithArango to Generate util module.
 ENH : Add billing.notifications.port to default config.
 ENH : Remove unique attribute of billingCustomer in user collection.
+ENH : Replace graphicmagick by imagemagick.

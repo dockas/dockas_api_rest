@@ -1,9 +1,9 @@
 FROM mhart/alpine-node:7
-MAINTAINER Nosebit Dev Team <dev@nosebit.com>
+MAINTAINER Dockas Dev Team <dev@dockas.com>
 
 # Install dev dependencies
 RUN build_pkgs="gcc g++ python git autoconf automake boost libtool flex bison" && \
-    run_pkgs="graphicsmagick make bash" && \
+    run_pkgs="imagemagick make bash" && \
     apk --update add ${build_pkgs} ${run_pkgs}
 
 # Install thrift
