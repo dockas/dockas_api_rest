@@ -18,7 +18,7 @@ lint:
 	node ./node_modules/.bin/eslint --ignore-pattern '**/*.test.js' --ignore-pattern 'node_modules/**' --ignore-pattern 'gen-nodejs/**' '**/*.js'
 
 test:
-	NODE_PATH=${NODE_PATH} NODE_ENV=test mocha --reporter list --timeout 30000 --watch --harmony --es_staging --recursive --opts .test.js ./lib
+	NODE_PATH=${NODE_PATH} NODE_ENV=test mocha --reporter list --timeout 30000 --watch --harmony --es_staging --recursive --opts .test.js ./lib/$(path)
 
 init:
 	git submodule update --recursive --remote

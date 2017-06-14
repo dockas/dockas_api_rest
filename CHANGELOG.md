@@ -88,3 +88,5 @@ FEA : Add nameWithArango to Generate util module.
 ENH : Add billing.notifications.port to default config.
 ENH : Remove unique attribute of billingCustomer in user collection.
 ENH : Replace graphicmagick by imagemagick.
+ENH : Split notification in *notification_alert*, *notification_email* and (soon) *notification_sms*.
+ENH : Refactor all email service to new notification_email.
