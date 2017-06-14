@@ -90,3 +90,6 @@ ENH : Remove unique attribute of billingCustomer in user collection.
 ENH : Replace graphicmagick by imagemagick.
 ENH : Split notification in *notification_alert*, *notification_email* and (soon) *notification_sms*.
 ENH : Refactor all email service to new notification_email.
+ENH : Add [ADMIN] string in admin message email subject.
+ENH : Set data as joi valid value in user update to applt phone default country code.
+FEA : Implements notification sms service.

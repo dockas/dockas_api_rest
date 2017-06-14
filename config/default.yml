@@ -31,6 +31,9 @@ email:
         signup: https://dockas.com/signup
         images: https://file.dockas.com/images
 
+sms:
+    lang: pt-br
+
 db:
     mongo:
         url: mongodb://mongo.service.consul:27017/Dockas
