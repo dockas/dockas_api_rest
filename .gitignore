@@ -10,6 +10,7 @@ config/local*
 
 # Yarn
 yarn.lock
+package-lock.json
 
 # Ignore files and tmp folder
 files
