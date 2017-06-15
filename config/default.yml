@@ -64,6 +64,13 @@ rootUser:
     maxBrandCount: 1
     brandCount: 0
     deletedAt: null
+    postalCodeAddress:
+        neighborhood: Santo Antônio
+        street: Professor Arduino Bolivar
+        city: Belo Horizonte
+        state: MG
+        country: BRA
+        postalCode: 30350140
     roles:
         - admin
 

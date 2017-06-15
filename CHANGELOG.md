@@ -93,3 +93,7 @@ ENH : Refactor all email service to new notification_email.
 ENH : Add [ADMIN] string in admin message email subject.
 ENH : Set data as joi valid value in user update to applt phone default country code.
 FEA : Implements notification sms service.
+ENH : Use user.postalCodeAddress to set an almost legitimate shippingAddress in moip customer (Moip requirement). This strategy allows our payment flow to be all in one page at the webapp.
+FEA : Implement a postal code service to find assotiated address (only for Brazil, right now).
+ENH : Require postalCodeAddress (i.e., only based on an informed postalCode) to create an invitation.
+ENH : Return full user data from create method of user service.
