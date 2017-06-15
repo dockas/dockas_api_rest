@@ -97,3 +97,4 @@ ENH : Use user.postalCodeAddress to set an almost legitimate shippingAddress in 
 FEA : Implement a postal code service to find assotiated address (only for Brazil, right now).
 ENH : Require postalCodeAddress (i.e., only based on an informed postalCode) to create an invitation.
 ENH : Return full user data from create method of user service.
+ENH : Add state and country to order address.
