@@ -99,3 +99,6 @@ ENH : Require postalCodeAddress (i.e., only based on an informed postalCode) to 
 ENH : Return full user data from create method of user service.
 ENH : Add state and country to order address.
 ENH : Replace postal code service by an address service.
+ENH : Update product stock on order create.
+FEA : Add product controller updateStatus route.
+ENH : Remove authPolicy from tag controller incFindCount route.
