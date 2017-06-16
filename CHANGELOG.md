@@ -102,3 +102,6 @@ ENH : Replace postal code service by an address service.
 ENH : Update product stock on order create.
 FEA : Add product controller updateStatus route.
 ENH : Remove authPolicy from tag controller incFindCount route.
+ENH : Remove all notifications registered at moip and create them again if target url changed or there is more than 1 notification registered.
+ENH : Allow admins to update products (stock).
+ENH : Add env flag to email subject.
