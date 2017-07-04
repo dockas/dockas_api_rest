@@ -126,3 +126,4 @@ FEA : Add order updateItemStatus to enable update of single item status.
 ENH : Add supplyType to product schema (values are *on_stock* and *on_demand*).
 ENH : Prevent product stock change from list_subscription orders.
 ENH : Add user roles for seller and hero.
+FIX : Forget to add change before commit! Sorry :)

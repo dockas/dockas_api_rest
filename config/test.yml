@@ -1,0 +1,9 @@
+urls:
+    logo: http://dockas.dev/assets/images/logo_400x88.png
+    signup: http://dockas.dev/signup
+    images: http://file.dockas.dev/images
+    listOrderApprove: http://dockas.dev/approve
+
+db:
+  mongo:
+    url: mongodb://localhost:27017/DockasTest

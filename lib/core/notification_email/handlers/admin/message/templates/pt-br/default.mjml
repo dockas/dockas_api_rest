@@ -1,0 +1,38 @@
+<mjml>
+  <mj-head>
+    <mj-title>Admin</mj-title>
+
+    <mj-font name="PT Mono" href="https://fonts.googleapis.com/css?family=PT+Mono" />
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Raleway?800" />
+
+    <mj-style inline="inline">
+      .break-all { word-break: break-all; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body>
+    <mj-container>
+      <mj-section>
+        <mj-column>
+          <mj-image width="150" src="{{logoUrl}}" />
+        </mj-column>
+      </mj-section>
+
+      <mj-wrapper background-color="#f9f9f9">
+        <mj-section padding="0">
+          <mj-column>
+            <mj-text font-size="18" font-weight="800" font-family="Raleway">{{title}}</mj-text>
+          </mj-column>
+        </mj-section>
+        
+        <mj-section padding-top="10">
+          <mj-column>
+            <mj-text font-family="PT Mono" css-class="break-all">
+              {{data}}
+            </mj-text>
+          </mj-column>
+        </mj-section>
+      </mj-wrapper>
+    </mj-container>
+  </mj-body>
+</mjml>

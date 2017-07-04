@@ -1,0 +1,63 @@
+<mjml>
+  <mj-head>
+    <mj-title>Pedido</mj-title>
+
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Raleway?400,800" />
+  </mj-head>
+
+  <mj-body>
+    <mj-container>
+      <mj-section>
+        <mj-column>
+          <mj-image width="150" src="{{logoUrl}}" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#f9f9f9">
+        <mj-column>
+          <mj-text font-size="18" font-weight="800" font-family="Raleway">Pedido #{{order.count}}</mj-text>
+
+          <mj-text font-family="Raleway">
+            O pagamento do seu pedido foi realizado com sucesso e a entrega está agendada para <b>{{order.deliverDate}}</b>. Segue o cupom fiscal da sua compra:
+          </mj-text>
+
+          <mj-spacer height="20px" />
+
+          <mj-table>
+            <tr style="border-bottom:1px solid #ecedee;text-align:left;padding:15px 0; color: #999">
+              <th style="padding: 10px 0 10px 0;">Produto</th>
+              <th style="padding: 10px 0 10px 15px;">Quantidade</th>
+              <th style="padding: 10px 0 10px 15px;">Preço Total (R$)</th>
+            </tr>
+
+            {{#order.items}}
+            <tr style="color: #666">
+              <td style="padding: 10px 0 10px 0;">{{product.name}}</td>
+              <td style="padding: 10px 0 10px 15px;">{{quantity}}</td>
+              <td style="padding: 10px 0 10px 15px;">{{totalPrice}}</td>
+            </tr>
+            {{/order.items}}
+
+            {{#order.totalFee}}
+            <tr style="color: #666;border-top: 1px solid #ecedee; color: #999">
+              <td colspan="2" style="padding: 10px 0 10px 0; font-weight: 800">TAXAS</td>
+              <td style="padding: 10px 0 10px 15px; font-weight: 800">{{order.totalFee}}</td>
+            </tr>
+            {{/order.totalFee}}
+
+            {{#order.totalDiscount}}
+            <tr style="color: #666">
+              <td colspan="2" style="padding: 10px 0 10px 0; font-weight: 800">DESCONTOS</td>
+              <td style="padding: 10px 0 10px 15px; font-weight: 800">{{order.totalDiscount}}</td>
+            {{/order.totalDiscount}}
+
+            <tr style="border-top: 1px solid #ecedee; color: #999">
+              <td colspan="2" style="padding: 10px 0 10px 0; font-weight: 800">TOTAL</td>
+              <td style="padding: 10px 0 10px 15px; font-weight: 800">{{order.totalPrice}}</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>
