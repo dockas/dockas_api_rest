@@ -4,3 +4,4 @@ email_subject_new_user: Novo usuário
 email_subject_new_product: Novo produto
 email_subject_new_order: Novo pedido
 email_subject_order_payment_authorized: "Autorizado pagamento do pedido #{{count}}"
+email_subject_list_order_created: Ordem de lista criada

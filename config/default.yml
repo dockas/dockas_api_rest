@@ -13,13 +13,52 @@ qrcodes:
 sendgrid:
     key: ""
 
-minOrderTotalPrice: 7000
+order:
+    minTotalPrice: 7000
+
+    # Fees to be applied to the order.
+    fees:
+        deliver:
+            value: 990
+            currencyCode: BRL
+            rules:
+                priceRange:
+                    lt: 7000
+                weekdays:
+                    - Wednesday
+
+    minimumDaysToDeliver: 5
+
+    # Use and encoding like this patern
+    # [1-7]_HH:mm
+    # where 1-7 is the iso day of week of the day
+    # (1 = Monday and 7 = Sunday).
+    allowedDeliverWeekdays:
+        Wednesday:
+            times:
+                - "12:00"
+        Sunday:
+            times:
+                - "12:00"
+
+cron:
+    listSubscription:
+        pattern: "00 00 12 * *"
+
+fee:
+    onDemand: 20
 
 hostnames:
     webapp: dockas.com
     api: api.dockas.com
     socket: socket.dockas.com
     file: file.dockas.com
+
+urls:
+    logo: https://dockas.com/assets/images/logo_400x88.png
+    signup: https://dockas.com/signup
+    images: https://file.dockas.com/images
+    listOrderApprove: https://dockas.com/approve
 
 email:
     lang: pt-br
@@ -37,7 +76,6 @@ sms:
 db:
     mongo:
         url: mongodb://mongo.service.consul:27017/Dockas
-        testUrl: mongodb://mongo.service.consul:27017/DockasTest
     redis:
         url: redis://redis.service.consul:6379
         secret: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
@@ -72,7 +110,9 @@ rootUser:
         country: BRA
         postalCode: 30350140
     roles:
+        - user
         - admin
+        - seller
 
 user:
     maxBrandCount: 1
@@ -108,6 +148,12 @@ notifications:
                 - label: _NO_
                   value: no
 
+invitation:
+    maxAutoSendPerWeek: 20
+
 # Shared config keys
 shared:
-    - minOrderTotalPrice
+    - order.minTotalPrice
+    - order.minimumDaysToDeliver
+    - order.allowedDeliverWeekdays
+    - order.fees

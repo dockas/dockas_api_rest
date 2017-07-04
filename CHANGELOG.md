@@ -105,3 +105,24 @@ ENH : Remove authPolicy from tag controller incFindCount route.
 ENH : Remove all notifications registered at moip and create them again if target url changed or there is more than 1 notification registered.
 ENH : Allow admins to update products (stock).
 ENH : Add env flag to email subject.
+FEA : Create list_subscription service.
+FEA : Create wallet service.
+FEA : Create transfer service.
+ENH : Use mjml email template instead of pug.
+FEA : Create order utils with getTotalFee method (used when we gonna generate a order from a list subscription).
+FEA : Add fee schema in config order section.
+ENH : Generate cron pattern for days dinamically based on which weekdays are allowed to deliver.
+ENH : Create a brand wallet on brand creation.
+ENH : Add findOrders method to brand controller which group orders main data by status and pickupDate.
+ENH : Add findTransfers method to brand controller.
+ENH : Remove minimum total price requirement for an order.
+ENH : Split user update method into update and updateMe.
+ENH : Add validatePassword method to auth service (used in list_subscription order approve flow).
+ENH : Hash sensitive credit_card info required by moip adaptor to prevent insert it every time (boring!!!).
+FEA : Auto approve a certain number per week of invitations.
+ENH : Generate list nameId from name.
+ENH : Add deliverDate, pickupDate and hero to order schema.
+FEA : Add order updateItemStatus to enable update of single item status.
+ENH : Add supplyType to product schema (values are *on_stock* and *on_demand*).
+ENH : Prevent product stock change from list_subscription orders.
+ENH : Add user roles for seller and hero.
