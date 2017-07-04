@@ -1,0 +1,37 @@
+<mjml>
+    <mj-head>
+        <mj-title>Convite Dockas</mj-title>
+        
+        <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Raleway" />
+    </mj-head>
+
+    <mj-body>
+        <mj-container>
+            <mj-section>
+                <mj-column>
+                    <mj-image width="150" src="{{logoUrl}}" />
+                </mj-column>
+            </mj-section>
+          
+            <mj-section background-color="#f9f9f9">
+                <mj-column>
+                    <mj-text font-family="Raleway" align="center">
+                        Agora você pode desfrutar de todos os benefícios do Dockas, seu supermercado 100% online. Clique no botão abaixo para criar sua conta:
+                    </mj-text>
+              
+                    <mj-spacer height="10" />
+              
+                    <mj-button background-color="#F63A4D" font-size="18" font-family="Raleway" href="{{signupUrl}}">Criar Minha Conta</mj-button>
+                </mj-column>
+            </mj-section>
+          
+            <mj-section padding="0">
+                <mj-column>
+                    <mj-text font-family="Raleway" color="#666" font-size="10">
+                        Em caso de dúvidas, sugestões ou críticas entre em contato conosco a qualquer momento pelo email <a href="mailto:contato@dockas.com">contato@dockas.com</a>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+        </mj-container>
+    </mj-body>
+</mjml>

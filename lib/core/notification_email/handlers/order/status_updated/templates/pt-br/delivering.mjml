@@ -1,0 +1,27 @@
+<mjml>
+  <mj-head>
+    <mj-title>Pedido Entregue</mj-title>
+
+    <mj-font name="Raleway" href="https://fonts.googleapis.com/css?family=Raleway?400,800" />
+  </mj-head>
+
+  <mj-body>
+    <mj-container>
+      <mj-section>
+        <mj-column>
+          <mj-image width="150" src="{{logoUrl}}" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#f9f9f9">
+        <mj-column>
+          <mj-text font-size="18" font-weight="800" font-family="Raleway">Pedido #{{order.count}} à Caminho</mj-text>
+
+          <mj-text font-family="Raleway">
+            O seu pedido já está à caminho do endereço de entregue. Já já estaremos aí! :)
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>

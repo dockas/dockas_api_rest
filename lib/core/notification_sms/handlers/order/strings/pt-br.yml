@@ -1,0 +1,5 @@
+payment_authorized: "O pagamento do seu pedido #{{count}} foi realizado com sucesso"
+status_updated_to_packaged: "Seu pedido #{{count}} está embalado e pronto para a entrega"
+status_updated_to_delivering: "Seu pedido #{{count}} está a caminho"
+status_updated_to_delivered: "Seu pedido #{{count}} foi entregue"
+list_order_created: "Sua lista '{{subscription.list.name}}' no valor de R${{totalPrice}} está agendada para ser entrege {{deliverDate}}. Para confirmar o pedido clique no link {{shortUrl}}."

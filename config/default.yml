@@ -13,27 +13,83 @@ qrcodes:
 sendgrid:
     key: ""
 
-minOrderTotalPrice: 70.00
+order:
+    minTotalPrice: 7000
+
+    # Fees to be applied to the order.
+    fees:
+        deliver:
+            value: 990
+            currencyCode: BRL
+            rules:
+                priceRange:
+                    lt: 7000
+                weekdays:
+                    - Wednesday
+
+    minimumDaysToDeliver: 5
+
+    # Use and encoding like this patern
+    # [1-7]_HH:mm
+    # where 1-7 is the iso day of week of the day
+    # (1 = Monday and 7 = Sunday).
+    allowedDeliverWeekdays:
+        Wednesday:
+            times:
+                - "12:00"
+        Sunday:
+            times:
+                - "12:00"
+
+cron:
+    listSubscription:
+        pattern: "00 00 12 * *"
+
+fee:
+    onDemand: 20
+
+hostnames:
+    webapp: dockas.com
+    api: api.dockas.com
+    socket: socket.dockas.com
+    file: file.dockas.com
+
+urls:
+    logo: https://dockas.com/assets/images/logo_400x88.png
+    signup: https://dockas.com/signup
+    images: https://file.dockas.com/images
+    listOrderApprove: https://dockas.com/approve
 
 email:
-    templatesPath: emails
-    logoUrl: https://dockas.com/assets/images/logo_400x88.png
+    lang: pt-br
+    fromname: Dockas
+    from: noreply@dockas.com
 
-    invitation:
-        templateFileName: invitation.pug
-        fromname: Dockas
-        from: invitations-noreply@dockas.com
-        subject: Seu convite Dockas chegou!
-        signupUrl: https://dockas.com/signup
+    urls:
+        logo: https://dockas.com/assets/images/logo_400x88.png
+        signup: https://dockas.com/signup
+        images: https://file.dockas.com/images
+
+sms:
+    lang: pt-br
 
 db:
     mongo:
         url: mongodb://mongo.service.consul:27017/Dockas
-        testUrl: mongodb://mongo.service.consul:27017/DockasTest
     redis:
         url: redis://redis.service.consul:6379
         secret: 1RIIyW1F9LSP5z7OBeVM9K0S1h67b92I
         no_ready_check: true
+    arango:
+        url: tcp://root:@arango.service.consul:8529
+        database: Dockas
+
+billing:
+    notifications:
+      port: 9595
+
+crypt:
+    key: ""
 
 auth:
     token:
@@ -43,9 +99,26 @@ rootUser:
     fullName: Dockas Root
     email: root@dockas.com
     password: Mula*8
+    maxBrandCount: 1
+    brandCount: 0
     deletedAt: null
+    postalCodeAddress:
+        neighborhood: Santo Antônio
+        street: Professor Arduino Bolivar
+        city: Belo Horizonte
+        state: MG
+        country: BRA
+        postalCode: 30350140
     roles:
+        - user
         - admin
+        - seller
+
+user:
+    maxBrandCount: 1
+
+brand:
+    maxProductCount: 5
 
 activation:
     ticket:
@@ -65,6 +138,22 @@ alerts:
                 - label: _NO_
                   value: no
 
+notifications:
+    orderStatusUpdated:
+        ready__awaiting_user_availability:
+            onOptionSelectedAction: notificationOptionActionOrderUserAvailabilityUpdate
+            options:
+                - label: _YES_
+                  value: yes
+                - label: _NO_
+                  value: no
+
+invitation:
+    maxAutoSendPerWeek: 20
+
 # Shared config keys
 shared:
-    - minOrderTotalPrice
+    - order.minTotalPrice
+    - order.minimumDaysToDeliver
+    - order.allowedDeliverWeekdays
+    - order.fees
