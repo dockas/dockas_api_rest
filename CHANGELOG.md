@@ -131,3 +131,4 @@ FEA : Split order items to it's own collection with grossTotalPrice, totalSeller
 FEA : Add productCount to tag schema.
 FEA : Add costValue and validityDate to product schema.
 ENH : Change price schema to decouple from product and enable price type to be more generic.
+BUG : Correct a bug with missing console.log second parameter.
