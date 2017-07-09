@@ -127,3 +127,7 @@ ENH : Add supplyType to product schema (values are *on_stock* and *on_demand*).
 ENH : Prevent product stock change from list_subscription orders.
 ENH : Add user roles for seller and hero.
 FIX : Forget to add change before commit! Sorry :)
+FEA : Split order items to it's own collection with grossTotalPrice, totalSellerPrice, totalSellerFee, sellerFees info.
+FEA : Add productCount to tag schema.
+FEA : Add costValue and validityDate to product schema.
+ENH : Change price schema to decouple from product and enable price type to be more generic.

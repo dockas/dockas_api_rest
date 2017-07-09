@@ -20,6 +20,7 @@ order:
     fees:
         deliver:
             value: 990
+            type: fixed
             currencyCode: BRL
             rules:
                 priceRange:
@@ -27,7 +28,8 @@ order:
                 weekdays:
                     - Wednesday
 
-    minimumDaysToDeliver: 5
+    minimumDaysToDeliver: 5 
+    pickupDaysBeforeDeliver: 1
 
     # Use and encoding like this patern
     # [1-7]_HH:mm
@@ -40,6 +42,13 @@ order:
         Sunday:
             times:
                 - "12:00"
+
+orderItem:
+    sellerFees:
+        - id: dockas
+          value: 20
+          type: percentual
+
 
 cron:
     listSubscription:
@@ -63,7 +72,7 @@ urls:
 email:
     lang: pt-br
     fromname: Dockas
-    from: noreply@dockas.com
+    from: Dockas <noreply@dockas.com>
 
     urls:
         logo: https://dockas.com/assets/images/logo_400x88.png
