@@ -134,3 +134,5 @@ ENH : Change price schema to decouple from product and enable price type to be m
 BUG : Correct a bug with missing console.log second parameter.
 BUG : Correct a bug that not consider fees to billing order.
 BUG : Correct a bug that do not regenerate nameId of when tag name is updated.
+BUG : Correct a bug that do not update product hashes when tag priority changes.
+ENH : Prevent sending admin emails in environments other than production.
